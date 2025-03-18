@@ -1,8 +1,6 @@
 # RDB - MYSQL
 
 ## 🔥 1. MySQL 기본 개념
-- MySQL이란 무엇인가?
-- MySQL이 RDB(Relational Database)인 이유는?
 - MySQL의 주요 특징과 다른 RDBMS(Oracle, PostgreSQL, MSSQL)와의 차이점
 - MySQL의 주요 스토리지 엔진(InnoDB vs. MyISAM vs. Memory vs. CSV) 차이점
 
@@ -18,12 +16,8 @@
 - MySQL에서 인덱스란 무엇인가? (목적 & 역할)
 - 클러스터드 인덱스 vs. 논클러스터드 인덱스 차이점
 - B+ Tree가 MySQL에서 인덱스로 사용되는 이유 (B-Tree와의 차이점 포함)
-- MySQL에서 "인덱스가 없다면" 어떤 문제가 발생하는가?
 - MySQL 인덱스의 성능 저하 원인 (Fragmentation, Cardinality, Selectivity)
-- Composite Index(복합 인덱스)란 무엇이며, 언제 사용하는가?
 - Covering Index란 무엇이며, 성능을 어떻게 향상시키는가?
-- Full-Text Index란 무엇인가? (LIKE 검색 vs. Full-Text 검색 차이점)
-- 인덱스가 효율적으로 사용되지 않는 경우 (함수 사용, 와일드카드 검색 등)
 - MySQL에서 인덱스를 올바르게 설계하는 방법 (Best Practices)
 
 ## 🔥 4. MySQL 트랜잭션 & ACID & MVCC

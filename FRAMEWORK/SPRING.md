@@ -9,14 +9,18 @@
 -  Spring Boot Starter란 무엇이며, 어떤 역할을 하는가?
 -  Spring Boot에서 @SpringBootApplication이 내부적으로 하는 일은?
 
+### 🔥 [SPRING_ANSWER_1.md](SPRING_ANSWER_1.md) 답안 
+
 ## 🔥 2. Spring IoC (Inversion of Control) & DI (Dependency Injection)
 -  IoC(제어의 역전)란 무엇이며, Spring이 이를 어떻게 구현하는가?
 -  DI(의존성 주입)의 개념과 종류 (Constructor Injection vs. Field Injection vs. Setter Injection)
 -  Spring Bean이란 무엇이며, 어떻게 관리되는가?
 -  Bean Scope (Singleton, Prototype, Request, Session, Application)의 차이점
--  @Component, @Service, @Repository, @Controller의 차이점
--  @Bean vs. @Component 차이점
--  Spring에서 Bean을 등록하는 방법 (XML 설정 vs. @Configuration vs. @ComponentScan)
+-  @Bean vs. @Component vs. @Configuration 차이점
+
+
+### 🔥 [SPRING_ANSWER_2.md](SPRING_ANSWER_2.md) 답안
+
 
 ## 🔥 3. Spring AOP (Aspect-Oriented Programming)
 -  AOP(관점 지향 프로그래밍)란 무엇이며, 왜 필요한가?
@@ -25,42 +29,41 @@
 -  AOP가 Spring 내부에서 어떻게 동작하는가? (프록시 패턴 기반, CGLIB vs. JDK 동적 프록시 차이점)
 -  AOP가 Bean의 생명주기에 미치는 영향
 -  Spring AOP와 AspectJ AOP의 차이점
--  AOP의 대표적인 사용 사례 (트랜잭션 관리, 로깅, 보안 등)
+
+### 🔥 [SPRING_ANSWER_3.md](SPRING_ANSWER_3.md) 답안
+
 
 ## 🔥 4. Spring 트랜잭션 관리 (@Transactional)
 -  Spring에서 트랜잭션이란 무엇인가? (ACID 개념 포함)
 -  @Transactional이 내부적으로 어떻게 동작하는가?
--  Spring에서 트랜잭션 프록시는 어떻게 작동하는가? (CGLIB vs. JDK Proxy)
 -  트랜잭션 전파(Propagation) 옵션 7가지 (REQUIRED, REQUIRES_NEW 등) 차이점
 -  트랜잭션 격리 수준(Isolation Level)과 Dirty Read, Phantom Read 문제 해결 방법
 -  @Transactional을 메서드 레벨과 클래스 레벨에 적용할 때 차이점
 -  Spring에서 트랜잭션 롤백이 실제로 어떻게 처리되는가?
 
+
+### 🔥 [SPRING_ANSWER_4.md](SPRING_ANSWER_4.md) 답안
+
+
 ## 🔥 5. Spring MVC (Web Application)
--  Spring MVC 아키텍처 (DispatcherServlet, HandlerMapping, ViewResolver 등) 이해하기
 -  Spring에서 요청이 들어왔을 때의 흐름 (Request → Controller → Service → Repository → Response)
 -  Spring MVC에서 @Controller vs. @RestController 차이점
--  Spring에서 @RequestMapping vs. @GetMapping vs. @PostMapping 차이점
--  Spring에서 요청 데이터를 처리하는 방식 (@RequestParam, @PathVariable, @RequestBody 차이점)
--  Spring MVC에서 Model, ModelAndView, ResponseEntity의 차이점
--  Spring에서 CORS 문제를 해결하는 방법 (@CrossOrigin, WebMvcConfigurer 설정 등)
+-  Spring MVC에서 Model, ModelAndView, ResponseEntity 의 차이점
+
+
+### 🔥 [SPRING_ANSWER_5.md](SPRING_ANSWER_5.md) 답안
 
 ## 🔥 6. Spring Boot
--  Spring Boot란 무엇이며, 기존 Spring MVC와의 차이점
--  Spring Boot에서 AutoConfiguration이 동작하는 원리
--  Spring Boot Starter의 역할과 동작 방식
 -  Spring Boot에서 Embedded Tomcat이 어떻게 동작하는가?
 -  Spring Boot에서 ApplicationRunner vs. CommandLineRunner 차이점
--  Spring Boot에서 Actuator를 활용한 모니터링 방법
--  Spring Boot에서 로깅(Logging) 전략 (Slf4j, Logback, Log4j 차이점)
+
 
 ## 🔥 7. Spring Security
 -  Spring Security란 무엇이며, 어떻게 인증/인가를 관리하는가?
 -  Spring Security에서 인증(Authentication)과 인가(Authorization)의 차이
 -  Spring Security의 주요 구성 요소 (SecurityFilterChain, UserDetailsService, AuthenticationProvider)
 -  JWT (JSON Web Token) 기반 인증 방식과 기존 세션 기반 인증 방식 차이점
--  Spring Security에서 OAuth2를 활용한 소셜 로그인 구현 방식
--  CSRF 보호란 무엇이며, Spring Security에서 어떻게 방어하는가?
+
 
 ## 🔥 8. Spring과 JPA (Spring Data JPA)
 -  Spring Data JPA란 무엇이며, 기존 JPA와의 차이점
@@ -68,7 +71,7 @@
 -  JPA의 1차 캐시와 2차 캐시의 차이점
 -  Spring Data JPA에서 @Transactional과 EntityManager의 관계
 -  Lazy Loading과 Eager Loading의 차이 및 N+1 문제 해결 방법 (Fetch Join, Batch Size 등)
--  Spring에서 JPA를 활용한 QueryDSL 적용 방식
+
 
 ## 🔥 9. Spring에서 성능 최적화 방법
 -  Spring에서 Bean Scope를 적절히 활용하여 메모리 최적화하는 방법
@@ -76,6 +79,7 @@
 -  Spring에서 DB Connection Pool을 설정하는 방법 (HikariCP vs. Tomcat Pool)
 -  Spring에서 Redis를 활용한 세션 관리 최적화 방법
 -  Spring에서 API 응답 속도를 최적화하는 방법 (Gzip, HTTP/2, Response Streaming 등)
+
 
 ## 🔥 10. Spring 면접에서 자주 나오는 질문
 -  Spring Framework의 핵심 개념을 설명하시오.
